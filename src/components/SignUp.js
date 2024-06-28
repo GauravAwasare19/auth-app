@@ -33,7 +33,7 @@ const SignUp = () => {
       console.log("User created successfully!");
       setSuccess("User created successfully!");
       setError(null);
-      // Optionally, redirect or handle successful sign-up
+     
     } catch (error) {
       console.error("Error signing up:", error.message);
       setError(error.message);

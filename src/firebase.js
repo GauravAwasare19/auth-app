@@ -12,15 +12,15 @@ const firebaseConfig = {
   measurementId: "G-2Q91RDQX40"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-// Export Firebase services if needed
+
 export { auth, db };
 
-// Export any additional functions you need
+
 export const createUserWithEmailAndPassword = (email, password) =>
   firebaseCreateUserWithEmailAndPassword(auth, email, password);
 

@@ -10,7 +10,7 @@ const SignIn = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
-  const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
   const handleSignIn = async (e) => {
@@ -21,7 +21,7 @@ const SignIn = () => {
       setSuccess("Signed in successfully!");
       setError(null);
       console.log("Signed in successfully!");
-      // Optionally, redirect or handle successful sign-in
+    
     } catch (error) {
       console.error("Error signing in:", error.message);
       setError(error.message);

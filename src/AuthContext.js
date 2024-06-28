@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
     signIn: signInWithEmailAndPassword,
     signOut,
     resetPassword
-    // Add other methods or state as needed
+    
   };
 
   return (
